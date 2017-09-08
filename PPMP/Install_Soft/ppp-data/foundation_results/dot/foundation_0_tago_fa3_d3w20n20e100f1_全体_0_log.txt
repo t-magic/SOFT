@@ -1,0 +1,1759 @@
++A+ self.max_depth = 3
++B+ self.max_width = 20
++C+ self.max_display_node_count = 20
++D+ self.min_edge_freq = 1
++E+ self.max_edge_total_count = 100
+
++0+ count = 0, (wordpair = 価格# _ 代表名 -> 手頃# _ 代表名, freq = 326)
++1+ self.drawn_edge_total_count = 0 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 0 < self.max_display_node_count = 20
++3+ wordpair = 価格# _ 代表名 -> 手頃# _ 代表名 : freq = 326
++4+ enter => 2: 描画 黒 。矢元が4、5位(4位)
+
++0+ count = 1, (wordpair = 手頃# _ 代表名 -> 価格# _ 代表名, freq = 326)
++1+ self.drawn_edge_total_count = 1 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 2 < self.max_display_node_count = 20
++3+ wordpair = 手頃# _ 代表名 -> 価格# _ 代表名 : freq = 326
++4+ enter => 4: 抑制。上位5位の語へは逆張りしない。(4位) 矢元頻度合計6位以降(8位)
+
++0+ count = 2, (wordpair = 肌 _ 名詞 -> 自分 _ 名詞, freq = 292)
++1+ self.drawn_edge_total_count = 1 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 2 < self.max_display_node_count = 20
++3+ wordpair = 肌 _ 名詞 -> 自分 _ 名詞 : freq = 292
++4+ enter => 1: 描画 赤。矢元が3位以内(1位)
+
++0+ count = 3, (wordpair = 自分 _ 名詞 -> 肌 _ 名詞, freq = 292)
++1+ self.drawn_edge_total_count = 2 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 4 < self.max_display_node_count = 20
++3+ wordpair = 自分 _ 名詞 -> 肌 _ 名詞 : freq = 292
++4+ enter
++0+ count = 4, (wordpair = 色 _ 名詞 -> 肌 _ 名詞, freq = 286)
++1+ self.drawn_edge_total_count = 2 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 4 < self.max_display_node_count = 20
++3+ wordpair = 色 _ 名詞 -> 肌 _ 名詞 : freq = 286
++4+ enter => 1: 描画 赤。矢元が3位以内(3位)
+
++0+ count = 5, (wordpair = 肌 _ 名詞 -> 色 _ 名詞, freq = 286)
++1+ self.drawn_edge_total_count = 3 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 5 < self.max_display_node_count = 20
++3+ wordpair = 肌 _ 名詞 -> 色 _ 名詞 : freq = 286
++4+ enter => 3: 置き換え(順位 1 < 3)。矢元が5位以内で、すでに矢先からの辺として描画済み
+
++0+ count = 6, (wordpair = 肌 _ 名詞 -> 綺麗# _ 代表名, freq = 255)
++1+ self.drawn_edge_total_count = 4 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 5 < self.max_display_node_count = 20
++3+ wordpair = 肌 _ 名詞 -> 綺麗# _ 代表名 : freq = 255
++4+ enter => 1: 描画 赤。矢元が3位以内(1位)
+
++0+ count = 7, (wordpair = 綺麗# _ 代表名 -> 肌 _ 名詞, freq = 255)
++1+ self.drawn_edge_total_count = 5 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 6 < self.max_display_node_count = 20
++3+ wordpair = 綺麗# _ 代表名 -> 肌 _ 名詞 : freq = 255
++4+ enter => 4: 抑制。上位5位の語へは逆張りしない。(1位) 矢元頻度合計6位以降(6位)
+
++0+ count = 8, (wordpair = 仕上がり _ 名詞 -> 自然 _ 名詞, freq = 210)
++1+ self.drawn_edge_total_count = 5 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 6 < self.max_display_node_count = 20
++3+ wordpair = 仕上がり _ 名詞 -> 自然 _ 名詞 : freq = 210
++4+ enter => 6: 描画 紫。元と先を入れ替えた辺がない 矢元頻度合計6位以降(9位)
+
++0+ count = 9, (wordpair = 自然 _ 名詞 -> 仕上がり _ 名詞, freq = 210)
++1+ self.drawn_edge_total_count = 6 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 8 < self.max_display_node_count = 20
++3+ wordpair = 自然 _ 名詞 -> 仕上がり _ 名詞 : freq = 210
++4+ enter => 3: 置き換え(順位 2 < 9)。矢元が5位以内で、すでに矢先からの辺として描画済み
+
++0+ count = 10, (wordpair = 自然 _ 名詞 -> 感じ _ 名詞, freq = 199)
++1+ self.drawn_edge_total_count = 7 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 8 < self.max_display_node_count = 20
++3+ wordpair = 自然 _ 名詞 -> 感じ _ 名詞 : freq = 199
++4+ enter => 1: 描画 赤。矢元が3位以内(2位)
+
++0+ count = 11, (wordpair = 感じ _ 名詞 -> 自然 _ 名詞, freq = 199)
++1+ self.drawn_edge_total_count = 8 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 9 < self.max_display_node_count = 20
++3+ wordpair = 感じ _ 名詞 -> 自然 _ 名詞 : freq = 199
++4+ enter => 4: 抑制。上位5位の語へは逆張りしない。(2位) 矢元頻度合計6位以降(7位)
+
++0+ count = 12, (wordpair = 自分 _ 名詞 -> 色 _ 名詞, freq = 167)
++1+ self.drawn_edge_total_count = 8 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 9 < self.max_display_node_count = 20
++3+ wordpair = 自分 _ 名詞 -> 色 _ 名詞 : freq = 167
++4+ enter => 2: 描画 黒 。矢元が4、5位(5位)
+
++0+ count = 13, (wordpair = 色 _ 名詞 -> 自分 _ 名詞, freq = 167)
++1+ self.drawn_edge_total_count = 9 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 9 < self.max_display_node_count = 20
++3+ wordpair = 色 _ 名詞 -> 自分 _ 名詞 : freq = 167
++4+ enter => 3: 置き換え(順位 3 < 5)。矢元が5位以内で、すでに矢先からの辺として描画済み
+
++0+ count = 14, (wordpair = 感じ _ 名詞 -> 肌 _ 名詞, freq = 144)
++1+ self.drawn_edge_total_count = 10 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 9 < self.max_display_node_count = 20
++3+ wordpair = 感じ _ 名詞 -> 肌 _ 名詞 : freq = 144
++4+ enter => 6: 描画 紫。元と先を入れ替えた辺がない 矢元頻度合計6位以降(7位)
+
++0+ count = 15, (wordpair = 肌 _ 名詞 -> 感じ _ 名詞, freq = 144)
++1+ self.drawn_edge_total_count = 11 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 9 < self.max_display_node_count = 20
++3+ wordpair = 肌 _ 名詞 -> 感じ _ 名詞 : freq = 144
++4+ enter => 3: 置き換え(順位 1 < 7)。矢元が5位以内で、すでに矢先からの辺として描画済み
+
++0+ count = 16, (wordpair = 価格# _ 代表名 -> 肌 _ 名詞, freq = 134)
++1+ self.drawn_edge_total_count = 12 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 9 < self.max_display_node_count = 20
++3+ wordpair = 価格# _ 代表名 -> 肌 _ 名詞 : freq = 134
++4+ enter => 2: 描画 黒 。矢元が4、5位(4位)
+
++0+ count = 17, (wordpair = 肌 _ 名詞 -> 価格# _ 代表名, freq = 134)
++1+ self.drawn_edge_total_count = 13 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 9 < self.max_display_node_count = 20
++3+ wordpair = 肌 _ 名詞 -> 価格# _ 代表名 : freq = 134
++4+ enter => 3: 置き換え(順位 1 < 4)。矢元が5位以内で、すでに矢先からの辺として描画済み
+
++0+ count = 18, (wordpair = 自然 _ 名詞 -> 肌 _ 名詞, freq = 116)
++1+ self.drawn_edge_total_count = 14 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 9 < self.max_display_node_count = 20
++3+ wordpair = 自然 _ 名詞 -> 肌 _ 名詞 : freq = 116
++4+ enter => 1: 描画 赤。矢元が3位以内(2位)
+
++0+ count = 19, (wordpair = 肌 _ 名詞 -> 自然 _ 名詞, freq = 116)
++1+ self.drawn_edge_total_count = 15 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 9 < self.max_display_node_count = 20
++3+ wordpair = 肌 _ 名詞 -> 自然 _ 名詞 : freq = 116
++4+ enter => 3: 置き換え(順位 1 < 2)。矢元が5位以内で、すでに矢先からの辺として描画済み
+
++0+ count = 20, (wordpair = 肌 _ 名詞 -> 伸び _ 名詞, freq = 99)
++1+ self.drawn_edge_total_count = 16 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 9 < self.max_display_node_count = 20
++3+ wordpair = 肌 _ 名詞 -> 伸び _ 名詞 : freq = 99
++4+ enter => 1: 描画 赤。矢元が3位以内(1位)
+
++0+ count = 21, (wordpair = 伸び _ 名詞 -> 肌 _ 名詞, freq = 99)
++1+ self.drawn_edge_total_count = 17 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 10 < self.max_display_node_count = 20
++3+ wordpair = 伸び _ 名詞 -> 肌 _ 名詞 : freq = 99
++4+ enter => 4: 抑制。上位5位の語へは逆張りしない。(1位) 矢元頻度合計6位以降(11位)
+
++0+ count = 22, (wordpair = 肌 _ 名詞 -> 負担 _ 名詞, freq = 88)
++1+ self.drawn_edge_total_count = 17 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 10 < self.max_display_node_count = 20
++3+ wordpair = 肌 _ 名詞 -> 負担 _ 名詞 : freq = 88
++4+ enter => 1: 描画 赤。矢元が3位以内(1位)
+
++0+ count = 23, (wordpair = カバー力 _ 複合語 -> 肌 _ 名詞, freq = 79)
++1+ self.drawn_edge_total_count = 18 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 11 < self.max_display_node_count = 20
++3+ wordpair = カバー力 _ 複合語 -> 肌 _ 名詞 : freq = 79
++4+ enter => 6: 描画 紫。元と先を入れ替えた辺がない 矢元頻度合計6位以降(10位)
+
++0+ count = 24, (wordpair = 肌 _ 名詞 -> カバー力 _ 複合語, freq = 79)
++1+ self.drawn_edge_total_count = 19 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 12 < self.max_display_node_count = 20
++3+ wordpair = 肌 _ 名詞 -> カバー力 _ 複合語 : freq = 79
++4+ enter => 3: 置き換え(順位 1 < 10)。矢元が5位以内で、すでに矢先からの辺として描画済み
+
++0+ count = 25, (wordpair = 綺麗# _ 代表名 -> 仕上がり _ 名詞, freq = 75)
++1+ self.drawn_edge_total_count = 20 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 12 < self.max_display_node_count = 20
++3+ wordpair = 綺麗# _ 代表名 -> 仕上がり _ 名詞 : freq = 75
++4+ enter => 6: 描画 紫。元と先を入れ替えた辺がない 矢元頻度合計6位以降(6位)
+
++0+ count = 26, (wordpair = 仕上がり _ 名詞 -> 綺麗# _ 代表名, freq = 75)
++1+ self.drawn_edge_total_count = 21 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 12 < self.max_display_node_count = 20
++3+ wordpair = 仕上がり _ 名詞 -> 綺麗# _ 代表名 : freq = 75
++4+ enter => 5: 描画 紫。元と先を入れ替えた辺がある 矢元頻度合計6位以降(9位)
+
++0+ count = 27, (wordpair = カバー力 _ 複合語 -> 伸び _ 名詞, freq = 58)
++1+ self.drawn_edge_total_count = 22 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 12 < self.max_display_node_count = 20
++3+ wordpair = カバー力 _ 複合語 -> 伸び _ 名詞 : freq = 58
++4+ enter => 6: 描画 紫。元と先を入れ替えた辺がない 矢元頻度合計6位以降(10位)
+
++0+ count = 28, (wordpair = 伸び _ 名詞 -> カバー力 _ 複合語, freq = 58)
++1+ self.drawn_edge_total_count = 23 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 12 < self.max_display_node_count = 20
++3+ wordpair = 伸び _ 名詞 -> カバー力 _ 複合語 : freq = 58
++4+ enter => 5: 描画 紫。元と先を入れ替えた辺がある 矢元頻度合計6位以降(11位)
+
++0+ count = 29, (wordpair = 肌 _ 名詞 -> 手頃# _ 代表名, freq = 56)
++1+ self.drawn_edge_total_count = 24 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 12 < self.max_display_node_count = 20
++3+ wordpair = 肌 _ 名詞 -> 手頃# _ 代表名 : freq = 56
++4+ enter => 1: 描画 赤。矢元が3位以内(1位)
+
++0+ count = 30, (wordpair = 手頃# _ 代表名 -> 肌 _ 名詞, freq = 56)
++1+ self.drawn_edge_total_count = 25 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 12 < self.max_display_node_count = 20
++3+ wordpair = 手頃# _ 代表名 -> 肌 _ 名詞 : freq = 56
++4+ enter => 4: 抑制。上位5位の語へは逆張りしない。(1位) 矢元頻度合計6位以降(8位)
+
++0+ count = 31, (wordpair = 価格# _ 代表名 -> 色 _ 名詞, freq = 54)
++1+ self.drawn_edge_total_count = 25 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 12 < self.max_display_node_count = 20
++3+ wordpair = 価格# _ 代表名 -> 色 _ 名詞 : freq = 54
++4+ enter => 2: 描画 黒 。矢元が4、5位(4位)
+
++0+ count = 32, (wordpair = 色 _ 名詞 -> 価格# _ 代表名, freq = 54)
++1+ self.drawn_edge_total_count = 26 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 12 < self.max_display_node_count = 20
++3+ wordpair = 色 _ 名詞 -> 価格# _ 代表名 : freq = 54
++4+ enter => 3: 置き換え(順位 3 < 4)。矢元が5位以内で、すでに矢先からの辺として描画済み
+
++0+ count = 33, (wordpair = 色 _ 名詞 -> 自然 _ 名詞, freq = 52)
++1+ self.drawn_edge_total_count = 27 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 12 < self.max_display_node_count = 20
++3+ wordpair = 色 _ 名詞 -> 自然 _ 名詞 : freq = 52
++4+ enter => 1: 描画 赤。矢元が3位以内(3位)
+
++0+ count = 34, (wordpair = 自然 _ 名詞 -> 色 _ 名詞, freq = 52)
++1+ self.drawn_edge_total_count = 28 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 12 < self.max_display_node_count = 20
++3+ wordpair = 自然 _ 名詞 -> 色 _ 名詞 : freq = 52
++4+ enter => 3: 置き換え(順位 2 < 3)。矢元が5位以内で、すでに矢先からの辺として描画済み
+
++0+ count = 35, (wordpair = カバー力 _ 複合語 -> 自然 _ 名詞, freq = 50)
++1+ self.drawn_edge_total_count = 29 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 12 < self.max_display_node_count = 20
++3+ wordpair = カバー力 _ 複合語 -> 自然 _ 名詞 : freq = 50
++4+ enter => 6: 描画 紫。元と先を入れ替えた辺がない 矢元頻度合計6位以降(10位)
+
++0+ count = 36, (wordpair = 自然 _ 名詞 -> カバー力 _ 複合語, freq = 50)
++1+ self.drawn_edge_total_count = 30 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 12 < self.max_display_node_count = 20
++3+ wordpair = 自然 _ 名詞 -> カバー力 _ 複合語 : freq = 50
++4+ enter => 3: 置き換え(順位 2 < 10)。矢元が5位以内で、すでに矢先からの辺として描画済み
+
++0+ count = 37, (wordpair = 肌 _ 名詞 -> よう _ 名詞, freq = 49)
++1+ self.drawn_edge_total_count = 31 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 12 < self.max_display_node_count = 20
++3+ wordpair = 肌 _ 名詞 -> よう _ 名詞 : freq = 49
++4+ enter => 1: 描画 赤。矢元が3位以内(1位)
+
++0+ count = 38, (wordpair = 自分 _ 名詞 -> 肌色 _ 名詞, freq = 49)
++1+ self.drawn_edge_total_count = 32 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 13 < self.max_display_node_count = 20
++3+ wordpair = 自分 _ 名詞 -> 肌色 _ 名詞 : freq = 49
++4+ enter => 2: 描画 黒 。矢元が4、5位(5位)
+
++0+ count = 39, (wordpair = カバー力 _ 複合語 -> 薄付き _ 複合語, freq = 45)
++1+ self.drawn_edge_total_count = 33 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 14 < self.max_display_node_count = 20
++3+ wordpair = カバー力 _ 複合語 -> 薄付き _ 複合語 : freq = 45
++4+ enter => 6: 描画 紫。元と先を入れ替えた辺がない 矢元頻度合計6位以降(10位)
+
++0+ count = 40, (wordpair = 肌 _ 名詞 -> ファンデーション _ 名詞, freq = 45)
++1+ self.drawn_edge_total_count = 34 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 15 < self.max_display_node_count = 20
++3+ wordpair = 肌 _ 名詞 -> ファンデーション _ 名詞 : freq = 45
++4+ enter => 1: 描画 赤。矢元が3位以内(1位)
+
++0+ count = 41, (wordpair = のり _ 名詞 -> 肌 _ 名詞, freq = 45)
++1+ self.drawn_edge_total_count = 35 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 16 < self.max_display_node_count = 20
++3+ wordpair = のり _ 名詞 -> 肌 _ 名詞 : freq = 45
++4+ enter => 6: 描画 紫。元と先を入れ替えた辺がない 矢元頻度合計6位以降(15位)
+
++0+ count = 42, (wordpair = 薄付き _ 複合語 -> カバー力 _ 複合語, freq = 45)
++1+ self.drawn_edge_total_count = 36 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 17 < self.max_display_node_count = 20
++3+ wordpair = 薄付き _ 複合語 -> カバー力 _ 複合語 : freq = 45
++4+ enter => 5: 描画 紫。元と先を入れ替えた辺がある 矢元頻度合計6位以降(12位)
+
++0+ count = 43, (wordpair = ファンデーション _ 名詞 -> 肌 _ 名詞, freq = 45)
++1+ self.drawn_edge_total_count = 37 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 17 < self.max_display_node_count = 20
++3+ wordpair = ファンデーション _ 名詞 -> 肌 _ 名詞 : freq = 45
++4+ enter => 4: 抑制。上位5位の語へは逆張りしない。(1位) 矢元頻度合計6位以降(14位)
+
++0+ count = 44, (wordpair = 無添加 _ 複合語 -> 肌 _ 名詞, freq = 45)
++1+ self.drawn_edge_total_count = 37 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 17 < self.max_display_node_count = 20
++3+ wordpair = 無添加 _ 複合語 -> 肌 _ 名詞 : freq = 45
++4+ enter => 6: 描画 紫。元と先を入れ替えた辺がない 矢元頻度合計6位以降(16位)
+
++0+ count = 45, (wordpair = 肌 _ 名詞 -> 無添加 _ 複合語, freq = 45)
++1+ self.drawn_edge_total_count = 38 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 18 < self.max_display_node_count = 20
++3+ wordpair = 肌 _ 名詞 -> 無添加 _ 複合語 : freq = 45
++4+ enter => 3: 置き換え(順位 1 < 16)。矢元が5位以内で、すでに矢先からの辺として描画済み
+
++0+ count = 46, (wordpair = 肌 _ 名詞 -> のり _ 名詞, freq = 45)
++1+ self.drawn_edge_total_count = 39 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 18 < self.max_display_node_count = 20
++3+ wordpair = 肌 _ 名詞 -> のり _ 名詞 : freq = 45
++4+ enter => 3: 置き換え(順位 1 < 15)。矢元が5位以内で、すでに矢先からの辺として描画済み
+
++0+ count = 47, (wordpair = 肌 _ 名詞 -> 私 _ 名詞, freq = 43)
++1+ self.drawn_edge_total_count = 40 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 18 < self.max_display_node_count = 20
++3+ wordpair = 肌 _ 名詞 -> 私 _ 名詞 : freq = 43
++4+ enter => 1: 描画 赤。矢元が3位以内(1位)
+
++0+ count = 48, (wordpair = 毛穴 _ 名詞 -> 肌 _ 名詞, freq = 43)
++1+ self.drawn_edge_total_count = 41 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 19 < self.max_display_node_count = 20
++3+ wordpair = 毛穴 _ 名詞 -> 肌 _ 名詞 : freq = 43
++4+ enter => 6: 描画 紫。元と先を入れ替えた辺がない 矢元頻度合計6位以降(13位)
+
++0+ count = 49, (wordpair = 価格# _ 代表名 -> カバー力 _ 複合語, freq = 43)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 価格# _ 代表名 -> カバー力 _ 複合語 : freq = 43
+
++0+ count = 50, (wordpair = カバー力 _ 複合語 -> 価格# _ 代表名, freq = 43)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = カバー力 _ 複合語 -> 価格# _ 代表名 : freq = 43
+
++0+ count = 51, (wordpair = 肌 _ 名詞 -> 仕上がり _ 名詞, freq = 43)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 肌 _ 名詞 -> 仕上がり _ 名詞 : freq = 43
+
++0+ count = 52, (wordpair = 肌 _ 名詞 -> 毛穴 _ 名詞, freq = 43)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 肌 _ 名詞 -> 毛穴 _ 名詞 : freq = 43
+
++0+ count = 53, (wordpair = 仕上がり _ 名詞 -> 肌 _ 名詞, freq = 43)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 仕上がり _ 名詞 -> 肌 _ 名詞 : freq = 43
+
++0+ count = 54, (wordpair = 伸び _ 名詞 -> 自然 _ 名詞, freq = 41)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 伸び _ 名詞 -> 自然 _ 名詞 : freq = 41
+
++0+ count = 55, (wordpair = 自然 _ 名詞 -> 伸び _ 名詞, freq = 41)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 自然 _ 名詞 -> 伸び _ 名詞 : freq = 41
+
++0+ count = 56, (wordpair = 綺麗# _ 代表名 -> カバー力 _ 複合語, freq = 37)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 綺麗# _ 代表名 -> カバー力 _ 複合語 : freq = 37
+
++0+ count = 57, (wordpair = カバー力 _ 複合語 -> 綺麗# _ 代表名, freq = 37)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = カバー力 _ 複合語 -> 綺麗# _ 代表名 : freq = 37
+
++0+ count = 58, (wordpair = 色 _ 名詞 -> 綺麗# _ 代表名, freq = 35)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 色 _ 名詞 -> 綺麗# _ 代表名 : freq = 35
+
++0+ count = 59, (wordpair = 綺麗# _ 代表名 -> 色 _ 名詞, freq = 35)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 綺麗# _ 代表名 -> 色 _ 名詞 : freq = 35
+
++0+ count = 60, (wordpair = 自然 _ 名詞 -> 薄付き _ 複合語, freq = 34)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 自然 _ 名詞 -> 薄付き _ 複合語 : freq = 34
+
++0+ count = 61, (wordpair = 薄付き _ 複合語 -> 自然 _ 名詞, freq = 34)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 薄付き _ 複合語 -> 自然 _ 名詞 : freq = 34
+
++0+ count = 62, (wordpair = 価格# _ 代表名 -> 自分 _ 名詞, freq = 33)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 価格# _ 代表名 -> 自分 _ 名詞 : freq = 33
+
++0+ count = 63, (wordpair = 自分 _ 名詞 -> 価格# _ 代表名, freq = 33)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 自分 _ 名詞 -> 価格# _ 代表名 : freq = 33
+
++0+ count = 64, (wordpair = 薄付き _ 複合語 -> 肌 _ 名詞, freq = 33)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 薄付き _ 複合語 -> 肌 _ 名詞 : freq = 33
+
++0+ count = 65, (wordpair = 自然 _ 名詞 -> 価格# _ 代表名, freq = 31)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 自然 _ 名詞 -> 価格# _ 代表名 : freq = 31
+
++0+ count = 66, (wordpair = 価格# _ 代表名 -> 自然 _ 名詞, freq = 31)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 価格# _ 代表名 -> 自然 _ 名詞 : freq = 31
+
++0+ count = 67, (wordpair = 伸び _ 名詞 -> 色 _ 名詞, freq = 31)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 伸び _ 名詞 -> 色 _ 名詞 : freq = 31
+
++0+ count = 68, (wordpair = 色 _ 名詞 -> 伸び _ 名詞, freq = 31)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 色 _ 名詞 -> 伸び _ 名詞 : freq = 31
+
++0+ count = 69, (wordpair = 伸び _ 名詞 -> 価格# _ 代表名, freq = 30)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 伸び _ 名詞 -> 価格# _ 代表名 : freq = 30
+
++0+ count = 70, (wordpair = カバー力 _ 複合語 -> 色 _ 名詞, freq = 30)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = カバー力 _ 複合語 -> 色 _ 名詞 : freq = 30
+
++0+ count = 71, (wordpair = 色 _ 名詞 -> カバー力 _ 複合語, freq = 30)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 色 _ 名詞 -> カバー力 _ 複合語 : freq = 30
+
++0+ count = 72, (wordpair = 価格# _ 代表名 -> 伸び _ 名詞, freq = 30)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 価格# _ 代表名 -> 伸び _ 名詞 : freq = 30
+
++0+ count = 73, (wordpair = 毛穴 _ 名詞 -> 綺麗# _ 代表名, freq = 29)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 毛穴 _ 名詞 -> 綺麗# _ 代表名 : freq = 29
+
++0+ count = 74, (wordpair = 綺麗# _ 代表名 -> 毛穴 _ 名詞, freq = 29)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 綺麗# _ 代表名 -> 毛穴 _ 名詞 : freq = 29
+
++0+ count = 75, (wordpair = 感じ _ 名詞 -> 伸び _ 名詞, freq = 28)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 感じ _ 名詞 -> 伸び _ 名詞 : freq = 28
+
++0+ count = 76, (wordpair = 伸び _ 名詞 -> 感じ _ 名詞, freq = 28)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 伸び _ 名詞 -> 感じ _ 名詞 : freq = 28
+
++0+ count = 77, (wordpair = 綺麗# _ 代表名 -> 自然 _ 名詞, freq = 27)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 綺麗# _ 代表名 -> 自然 _ 名詞 : freq = 27
+
++0+ count = 78, (wordpair = 自然 _ 名詞 -> 綺麗# _ 代表名, freq = 27)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 自然 _ 名詞 -> 綺麗# _ 代表名 : freq = 27
+
++0+ count = 79, (wordpair = 仕上がり _ 名詞 -> 価格# _ 代表名, freq = 26)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 仕上がり _ 名詞 -> 価格# _ 代表名 : freq = 26
+
++0+ count = 80, (wordpair = 価格# _ 代表名 -> 仕上がり _ 名詞, freq = 26)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 価格# _ 代表名 -> 仕上がり _ 名詞 : freq = 26
+
++0+ count = 81, (wordpair = 綺麗# _ 代表名 -> 伸び _ 名詞, freq = 26)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 綺麗# _ 代表名 -> 伸び _ 名詞 : freq = 26
+
++0+ count = 82, (wordpair = 伸び _ 名詞 -> 綺麗# _ 代表名, freq = 26)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 伸び _ 名詞 -> 綺麗# _ 代表名 : freq = 26
+
++0+ count = 83, (wordpair = 仕上がり _ 名詞 -> 伸び _ 名詞, freq = 25)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 仕上がり _ 名詞 -> 伸び _ 名詞 : freq = 25
+
++0+ count = 84, (wordpair = 伸び _ 名詞 -> 仕上がり _ 名詞, freq = 25)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 伸び _ 名詞 -> 仕上がり _ 名詞 : freq = 25
+
++0+ count = 85, (wordpair = カバー力 _ 複合語 -> 仕上がり _ 名詞, freq = 24)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = カバー力 _ 複合語 -> 仕上がり _ 名詞 : freq = 24
+
++0+ count = 86, (wordpair = 薄付き _ 複合語 -> 綺麗# _ 代表名, freq = 24)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 薄付き _ 複合語 -> 綺麗# _ 代表名 : freq = 24
+
++0+ count = 87, (wordpair = 綺麗# _ 代表名 -> 薄付き _ 複合語, freq = 24)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 綺麗# _ 代表名 -> 薄付き _ 複合語 : freq = 24
+
++0+ count = 88, (wordpair = 仕上がり _ 名詞 -> カバー力 _ 複合語, freq = 24)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 仕上がり _ 名詞 -> カバー力 _ 複合語 : freq = 24
+
++0+ count = 89, (wordpair = 感じ _ 名詞 -> よう _ 名詞, freq = 22)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 感じ _ 名詞 -> よう _ 名詞 : freq = 22
+
++0+ count = 90, (wordpair = カバー力 _ 複合語 -> 感じ _ 名詞, freq = 22)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = カバー力 _ 複合語 -> 感じ _ 名詞 : freq = 22
+
++0+ count = 91, (wordpair = 自分 _ 名詞 -> 自然 _ 名詞, freq = 22)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 自分 _ 名詞 -> 自然 _ 名詞 : freq = 22
+
++0+ count = 92, (wordpair = 感じ _ 名詞 -> カバー力 _ 複合語, freq = 22)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 感じ _ 名詞 -> カバー力 _ 複合語 : freq = 22
+
++0+ count = 93, (wordpair = 自然 _ 名詞 -> 自分 _ 名詞, freq = 22)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 自然 _ 名詞 -> 自分 _ 名詞 : freq = 22
+
++0+ count = 94, (wordpair = 薄付き _ 複合語 -> 伸び _ 名詞, freq = 21)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 薄付き _ 複合語 -> 伸び _ 名詞 : freq = 21
+
++0+ count = 95, (wordpair = 伸び _ 名詞 -> 薄付き _ 複合語, freq = 21)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 伸び _ 名詞 -> 薄付き _ 複合語 : freq = 21
+
++0+ count = 96, (wordpair = 価格# _ 代表名 -> 綺麗# _ 代表名, freq = 21)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 価格# _ 代表名 -> 綺麗# _ 代表名 : freq = 21
+
++0+ count = 97, (wordpair = 色 _ 名詞 -> 感じ _ 名詞, freq = 21)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 色 _ 名詞 -> 感じ _ 名詞 : freq = 21
+
++0+ count = 98, (wordpair = 感じ _ 名詞 -> 薄付き _ 複合語, freq = 21)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 感じ _ 名詞 -> 薄付き _ 複合語 : freq = 21
+
++0+ count = 99, (wordpair = 綺麗# _ 代表名 -> 価格# _ 代表名, freq = 21)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 綺麗# _ 代表名 -> 価格# _ 代表名 : freq = 21
+
++0+ count = 100, (wordpair = 薄付き _ 複合語 -> 感じ _ 名詞, freq = 21)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 薄付き _ 複合語 -> 感じ _ 名詞 : freq = 21
+
++0+ count = 101, (wordpair = 感じ _ 名詞 -> 色 _ 名詞, freq = 21)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 感じ _ 名詞 -> 色 _ 名詞 : freq = 21
+
++0+ count = 102, (wordpair = カバー力 _ 複合語 -> 毛穴 _ 名詞, freq = 19)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = カバー力 _ 複合語 -> 毛穴 _ 名詞 : freq = 19
+
++0+ count = 103, (wordpair = 毛穴 _ 名詞 -> カバー力 _ 複合語, freq = 19)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 毛穴 _ 名詞 -> カバー力 _ 複合語 : freq = 19
+
++0+ count = 104, (wordpair = 自分 _ 名詞 -> 伸び _ 名詞, freq = 18)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 自分 _ 名詞 -> 伸び _ 名詞 : freq = 18
+
++0+ count = 105, (wordpair = 手頃# _ 代表名 -> カバー力 _ 複合語, freq = 18)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 手頃# _ 代表名 -> カバー力 _ 複合語 : freq = 18
+
++0+ count = 106, (wordpair = 伸び _ 名詞 -> 手頃# _ 代表名, freq = 18)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 伸び _ 名詞 -> 手頃# _ 代表名 : freq = 18
+
++0+ count = 107, (wordpair = 伸び _ 名詞 -> 自分 _ 名詞, freq = 18)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 伸び _ 名詞 -> 自分 _ 名詞 : freq = 18
+
++0+ count = 108, (wordpair = ファンデーション _ 名詞 -> 色 _ 名詞, freq = 18)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = ファンデーション _ 名詞 -> 色 _ 名詞 : freq = 18
+
++0+ count = 109, (wordpair = 感じ _ 名詞 -> 綺麗# _ 代表名, freq = 18)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 感じ _ 名詞 -> 綺麗# _ 代表名 : freq = 18
+
++0+ count = 110, (wordpair = 仕上がり _ 名詞 -> 感じ _ 名詞, freq = 18)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 仕上がり _ 名詞 -> 感じ _ 名詞 : freq = 18
+
++0+ count = 111, (wordpair = 手頃# _ 代表名 -> 伸び _ 名詞, freq = 18)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 手頃# _ 代表名 -> 伸び _ 名詞 : freq = 18
+
++0+ count = 112, (wordpair = 価格# _ 代表名 -> 感じ _ 名詞, freq = 18)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 価格# _ 代表名 -> 感じ _ 名詞 : freq = 18
+
++0+ count = 113, (wordpair = 色 _ 名詞 -> ファンデーション _ 名詞, freq = 18)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 色 _ 名詞 -> ファンデーション _ 名詞 : freq = 18
+
++0+ count = 114, (wordpair = 感じ _ 名詞 -> 価格# _ 代表名, freq = 18)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 感じ _ 名詞 -> 価格# _ 代表名 : freq = 18
+
++0+ count = 115, (wordpair = カバー力 _ 複合語 -> 手頃# _ 代表名, freq = 18)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = カバー力 _ 複合語 -> 手頃# _ 代表名 : freq = 18
+
++0+ count = 116, (wordpair = 感じ _ 名詞 -> 仕上がり _ 名詞, freq = 18)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 感じ _ 名詞 -> 仕上がり _ 名詞 : freq = 18
+
++0+ count = 117, (wordpair = 綺麗# _ 代表名 -> 感じ _ 名詞, freq = 18)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 綺麗# _ 代表名 -> 感じ _ 名詞 : freq = 18
+
++0+ count = 118, (wordpair = ファンデーション _ 名詞 -> 自分 _ 名詞, freq = 17)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = ファンデーション _ 名詞 -> 自分 _ 名詞 : freq = 17
+
++0+ count = 119, (wordpair = 自然 _ 名詞 -> 手頃# _ 代表名, freq = 17)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 自然 _ 名詞 -> 手頃# _ 代表名 : freq = 17
+
++0+ count = 120, (wordpair = 手頃# _ 代表名 -> 色 _ 名詞, freq = 17)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 手頃# _ 代表名 -> 色 _ 名詞 : freq = 17
+
++0+ count = 121, (wordpair = 手頃# _ 代表名 -> 自然 _ 名詞, freq = 17)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 手頃# _ 代表名 -> 自然 _ 名詞 : freq = 17
+
++0+ count = 122, (wordpair = 自分 _ 名詞 -> ファンデーション _ 名詞, freq = 17)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 自分 _ 名詞 -> ファンデーション _ 名詞 : freq = 17
+
++0+ count = 123, (wordpair = 色 _ 名詞 -> 手頃# _ 代表名, freq = 17)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 色 _ 名詞 -> 手頃# _ 代表名 : freq = 17
+
++0+ count = 124, (wordpair = 感じ _ 名詞 -> 自分 _ 名詞, freq = 16)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 感じ _ 名詞 -> 自分 _ 名詞 : freq = 16
+
++0+ count = 125, (wordpair = 自分 _ 名詞 -> 感じ _ 名詞, freq = 16)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 自分 _ 名詞 -> 感じ _ 名詞 : freq = 16
+
++0+ count = 126, (wordpair = 感じ _ 名詞 -> 毛穴 _ 名詞, freq = 15)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 感じ _ 名詞 -> 毛穴 _ 名詞 : freq = 15
+
++0+ count = 127, (wordpair = カバー力 _ 複合語 -> 自分 _ 名詞, freq = 15)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = カバー力 _ 複合語 -> 自分 _ 名詞 : freq = 15
+
++0+ count = 128, (wordpair = 毛穴 _ 名詞 -> 感じ _ 名詞, freq = 15)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 毛穴 _ 名詞 -> 感じ _ 名詞 : freq = 15
+
++0+ count = 129, (wordpair = 仕上がり _ 名詞 -> 薄付き _ 複合語, freq = 15)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 仕上がり _ 名詞 -> 薄付き _ 複合語 : freq = 15
+
++0+ count = 130, (wordpair = 自分 _ 名詞 -> カバー力 _ 複合語, freq = 15)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 自分 _ 名詞 -> カバー力 _ 複合語 : freq = 15
+
++0+ count = 131, (wordpair = 薄付き _ 複合語 -> 仕上がり _ 名詞, freq = 15)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 薄付き _ 複合語 -> 仕上がり _ 名詞 : freq = 15
+
++0+ count = 132, (wordpair = 自然 _ 名詞 -> 毛穴 _ 名詞, freq = 13)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 自然 _ 名詞 -> 毛穴 _ 名詞 : freq = 13
+
++0+ count = 133, (wordpair = ファンデーション _ 名詞 -> 感じ _ 名詞, freq = 13)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = ファンデーション _ 名詞 -> 感じ _ 名詞 : freq = 13
+
++0+ count = 134, (wordpair = 毛穴 _ 名詞 -> 色 _ 名詞, freq = 13)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 毛穴 _ 名詞 -> 色 _ 名詞 : freq = 13
+
++0+ count = 135, (wordpair = 色 _ 名詞 -> 毛穴 _ 名詞, freq = 13)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 色 _ 名詞 -> 毛穴 _ 名詞 : freq = 13
+
++0+ count = 136, (wordpair = 自分 _ 名詞 -> よう _ 名詞, freq = 13)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 自分 _ 名詞 -> よう _ 名詞 : freq = 13
+
++0+ count = 137, (wordpair = 毛穴 _ 名詞 -> 自然 _ 名詞, freq = 13)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 毛穴 _ 名詞 -> 自然 _ 名詞 : freq = 13
+
++0+ count = 138, (wordpair = 感じ _ 名詞 -> ファンデーション _ 名詞, freq = 13)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 感じ _ 名詞 -> ファンデーション _ 名詞 : freq = 13
+
++0+ count = 139, (wordpair = 色 _ 名詞 -> 肌色 _ 名詞, freq = 13)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 色 _ 名詞 -> 肌色 _ 名詞 : freq = 13
+
++0+ count = 140, (wordpair = 肌 _ 名詞 -> 薄付き _ 複合語, freq = 12)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 肌 _ 名詞 -> 薄付き _ 複合語 : freq = 12
+
++0+ count = 141, (wordpair = 綺麗# _ 代表名 -> よう _ 名詞, freq = 12)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 綺麗# _ 代表名 -> よう _ 名詞 : freq = 12
+
++0+ count = 142, (wordpair = 仕上がり _ 名詞 -> 自分 _ 名詞, freq = 12)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 仕上がり _ 名詞 -> 自分 _ 名詞 : freq = 12
+
++0+ count = 143, (wordpair = 自分 _ 名詞 -> 仕上がり _ 名詞, freq = 12)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 自分 _ 名詞 -> 仕上がり _ 名詞 : freq = 12
+
++0+ count = 144, (wordpair = 色 _ 名詞 -> 仕上がり _ 名詞, freq = 12)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 色 _ 名詞 -> 仕上がり _ 名詞 : freq = 12
+
++0+ count = 145, (wordpair = 色 _ 名詞 -> 私 _ 名詞, freq = 12)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 色 _ 名詞 -> 私 _ 名詞 : freq = 12
+
++0+ count = 146, (wordpair = 仕上がり _ 名詞 -> 色 _ 名詞, freq = 12)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 仕上がり _ 名詞 -> 色 _ 名詞 : freq = 12
+
++0+ count = 147, (wordpair = ファンデーション _ 名詞 -> 価格# _ 代表名, freq = 11)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = ファンデーション _ 名詞 -> 価格# _ 代表名 : freq = 11
+
++0+ count = 148, (wordpair = 無添加 _ 複合語 -> 価格# _ 代表名, freq = 11)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 無添加 _ 複合語 -> 価格# _ 代表名 : freq = 11
+
++0+ count = 149, (wordpair = 手頃# _ 代表名 -> 自分 _ 名詞, freq = 11)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 手頃# _ 代表名 -> 自分 _ 名詞 : freq = 11
+
++0+ count = 150, (wordpair = 自分 _ 名詞 -> 手頃# _ 代表名, freq = 11)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 自分 _ 名詞 -> 手頃# _ 代表名 : freq = 11
+
++0+ count = 151, (wordpair = 自然 _ 名詞 -> 肌色 _ 名詞, freq = 11)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 自然 _ 名詞 -> 肌色 _ 名詞 : freq = 11
+
++0+ count = 152, (wordpair = のり _ 名詞 -> 価格# _ 代表名, freq = 10)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = のり _ 名詞 -> 価格# _ 代表名 : freq = 10
+
++0+ count = 153, (wordpair = よう _ 名詞 -> 感じ _ 名詞, freq = 10)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = よう _ 名詞 -> 感じ _ 名詞 : freq = 10
+
++0+ count = 154, (wordpair = 仕上がり _ 名詞 -> 手頃# _ 代表名, freq = 10)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 仕上がり _ 名詞 -> 手頃# _ 代表名 : freq = 10
+
++0+ count = 155, (wordpair = 手頃# _ 代表名 -> 仕上がり _ 名詞, freq = 10)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 手頃# _ 代表名 -> 仕上がり _ 名詞 : freq = 10
+
++0+ count = 156, (wordpair = よう _ 名詞 -> 肌 _ 名詞, freq = 10)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = よう _ 名詞 -> 肌 _ 名詞 : freq = 10
+
++0+ count = 157, (wordpair = 自分 _ 名詞 -> 綺麗# _ 代表名, freq = 9)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 自分 _ 名詞 -> 綺麗# _ 代表名 : freq = 9
+
++0+ count = 158, (wordpair = 綺麗# _ 代表名 -> 自分 _ 名詞, freq = 9)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 綺麗# _ 代表名 -> 自分 _ 名詞 : freq = 9
+
++0+ count = 159, (wordpair = よう _ 名詞 -> 自分 _ 名詞, freq = 9)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = よう _ 名詞 -> 自分 _ 名詞 : freq = 9
+
++0+ count = 160, (wordpair = ファンデーション _ 名詞 -> 伸び _ 名詞, freq = 9)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = ファンデーション _ 名詞 -> 伸び _ 名詞 : freq = 9
+
++0+ count = 161, (wordpair = 仕上がり _ 名詞 -> 毛穴 _ 名詞, freq = 9)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 仕上がり _ 名詞 -> 毛穴 _ 名詞 : freq = 9
+
++0+ count = 162, (wordpair = 毛穴 _ 名詞 -> 仕上がり _ 名詞, freq = 9)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 毛穴 _ 名詞 -> 仕上がり _ 名詞 : freq = 9
+
++0+ count = 163, (wordpair = 肌色 _ 名詞 -> 色 _ 名詞, freq = 9)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 肌色 _ 名詞 -> 色 _ 名詞 : freq = 9
+
++0+ count = 164, (wordpair = 綺麗# _ 代表名 -> 私 _ 名詞, freq = 9)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 綺麗# _ 代表名 -> 私 _ 名詞 : freq = 9
+
++0+ count = 165, (wordpair = ファンデーション _ 名詞 -> よう _ 名詞, freq = 9)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = ファンデーション _ 名詞 -> よう _ 名詞 : freq = 9
+
++0+ count = 166, (wordpair = 伸び _ 名詞 -> ファンデーション _ 名詞, freq = 9)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 伸び _ 名詞 -> ファンデーション _ 名詞 : freq = 9
+
++0+ count = 167, (wordpair = 肌色 _ 名詞 -> 自分 _ 名詞, freq = 9)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 肌色 _ 名詞 -> 自分 _ 名詞 : freq = 9
+
++0+ count = 168, (wordpair = 肌 _ 名詞 -> 肌色 _ 名詞, freq = 8)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 肌 _ 名詞 -> 肌色 _ 名詞 : freq = 8
+
++0+ count = 169, (wordpair = 毛穴 _ 名詞 -> 伸び _ 名詞, freq = 8)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 毛穴 _ 名詞 -> 伸び _ 名詞 : freq = 8
+
++0+ count = 170, (wordpair = 薄付き _ 複合語 -> 価格# _ 代表名, freq = 8)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 薄付き _ 複合語 -> 価格# _ 代表名 : freq = 8
+
++0+ count = 171, (wordpair = 手頃# _ 代表名 -> 感じ _ 名詞, freq = 8)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 手頃# _ 代表名 -> 感じ _ 名詞 : freq = 8
+
++0+ count = 172, (wordpair = ファンデーション _ 名詞 -> 自然 _ 名詞, freq = 8)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = ファンデーション _ 名詞 -> 自然 _ 名詞 : freq = 8
+
++0+ count = 173, (wordpair = 手頃# _ 代表名 -> 綺麗# _ 代表名, freq = 8)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 手頃# _ 代表名 -> 綺麗# _ 代表名 : freq = 8
+
++0+ count = 174, (wordpair = 肌色 _ 名詞 -> 肌 _ 名詞, freq = 8)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 肌色 _ 名詞 -> 肌 _ 名詞 : freq = 8
+
++0+ count = 175, (wordpair = 感じ _ 名詞 -> 手頃# _ 代表名, freq = 8)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 感じ _ 名詞 -> 手頃# _ 代表名 : freq = 8
+
++0+ count = 176, (wordpair = のり _ 名詞 -> 自分 _ 名詞, freq = 7)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = のり _ 名詞 -> 自分 _ 名詞 : freq = 7
+
++0+ count = 177, (wordpair = カバー力 _ 複合語 -> 負担 _ 名詞, freq = 7)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = カバー力 _ 複合語 -> 負担 _ 名詞 : freq = 7
+
++0+ count = 178, (wordpair = 無添加 _ 複合語 -> 自然 _ 名詞, freq = 7)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 無添加 _ 複合語 -> 自然 _ 名詞 : freq = 7
+
++0+ count = 179, (wordpair = 仕上がり _ 名詞 -> よう _ 名詞, freq = 7)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 仕上がり _ 名詞 -> よう _ 名詞 : freq = 7
+
++0+ count = 180, (wordpair = 価格# _ 代表名 -> 私 _ 名詞, freq = 7)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 価格# _ 代表名 -> 私 _ 名詞 : freq = 7
+
++0+ count = 181, (wordpair = ファンデーション _ 名詞 -> 綺麗# _ 代表名, freq = 7)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = ファンデーション _ 名詞 -> 綺麗# _ 代表名 : freq = 7
+
++0+ count = 182, (wordpair = よう _ 名詞 -> 綺麗# _ 代表名, freq = 7)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = よう _ 名詞 -> 綺麗# _ 代表名 : freq = 7
+
++0+ count = 183, (wordpair = 私 _ 名詞 -> 肌 _ 名詞, freq = 7)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 私 _ 名詞 -> 肌 _ 名詞 : freq = 7
+
++0+ count = 184, (wordpair = 負担 _ 名詞 -> 価格# _ 代表名, freq = 7)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 負担 _ 名詞 -> 価格# _ 代表名 : freq = 7
+
++0+ count = 185, (wordpair = ファンデーション _ 名詞 -> カバー力 _ 複合語, freq = 7)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = ファンデーション _ 名詞 -> カバー力 _ 複合語 : freq = 7
+
++0+ count = 186, (wordpair = 価格# _ 代表名 -> 負担 _ 名詞, freq = 7)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 価格# _ 代表名 -> 負担 _ 名詞 : freq = 7
+
++0+ count = 187, (wordpair = 負担 _ 名詞 -> カバー力 _ 複合語, freq = 7)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 負担 _ 名詞 -> カバー力 _ 複合語 : freq = 7
+
++0+ count = 188, (wordpair = 私 _ 名詞 -> 価格# _ 代表名, freq = 7)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 私 _ 名詞 -> 価格# _ 代表名 : freq = 7
+
++0+ count = 189, (wordpair = 私 _ 名詞 -> 色 _ 名詞, freq = 7)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 私 _ 名詞 -> 色 _ 名詞 : freq = 7
+
++0+ count = 190, (wordpair = 綺麗# _ 代表名 -> 手頃# _ 代表名, freq = 6)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 綺麗# _ 代表名 -> 手頃# _ 代表名 : freq = 6
+
++0+ count = 191, (wordpair = ファンデーション _ 名詞 -> 私 _ 名詞, freq = 6)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = ファンデーション _ 名詞 -> 私 _ 名詞 : freq = 6
+
++0+ count = 192, (wordpair = のり _ 名詞 -> 自然 _ 名詞, freq = 6)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = のり _ 名詞 -> 自然 _ 名詞 : freq = 6
+
++0+ count = 193, (wordpair = 私 _ 名詞 -> ファンデーション _ 名詞, freq = 6)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 私 _ 名詞 -> ファンデーション _ 名詞 : freq = 6
+
++0+ count = 194, (wordpair = 薄付き _ 複合語 -> 色 _ 名詞, freq = 6)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 薄付き _ 複合語 -> 色 _ 名詞 : freq = 6
+
++0+ count = 195, (wordpair = ファンデーション _ 名詞 -> のり _ 名詞, freq = 6)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = ファンデーション _ 名詞 -> のり _ 名詞 : freq = 6
+
++0+ count = 196, (wordpair = のり _ 名詞 -> 色 _ 名詞, freq = 6)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = のり _ 名詞 -> 色 _ 名詞 : freq = 6
+
++0+ count = 197, (wordpair = のり _ 名詞 -> ファンデーション _ 名詞, freq = 6)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = のり _ 名詞 -> ファンデーション _ 名詞 : freq = 6
+
++0+ count = 198, (wordpair = 肌色 _ 名詞 -> 自然 _ 名詞, freq = 6)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 肌色 _ 名詞 -> 自然 _ 名詞 : freq = 6
+
++0+ count = 199, (wordpair = 無添加 _ 複合語 -> 負担 _ 名詞, freq = 6)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 無添加 _ 複合語 -> 負担 _ 名詞 : freq = 6
+
++0+ count = 200, (wordpair = 薄付き _ 複合語 -> 負担 _ 名詞, freq = 6)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 薄付き _ 複合語 -> 負担 _ 名詞 : freq = 6
+
++0+ count = 201, (wordpair = 無添加 _ 複合語 -> 感じ _ 名詞, freq = 5)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 無添加 _ 複合語 -> 感じ _ 名詞 : freq = 5
+
++0+ count = 202, (wordpair = 手頃# _ 代表名 -> 無添加 _ 複合語, freq = 5)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 手頃# _ 代表名 -> 無添加 _ 複合語 : freq = 5
+
++0+ count = 203, (wordpair = 薄付き _ 複合語 -> 私 _ 名詞, freq = 5)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 薄付き _ 複合語 -> 私 _ 名詞 : freq = 5
+
++0+ count = 204, (wordpair = 私 _ 名詞 -> 綺麗# _ 代表名, freq = 5)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 私 _ 名詞 -> 綺麗# _ 代表名 : freq = 5
+
++0+ count = 205, (wordpair = 感じ _ 名詞 -> 私 _ 名詞, freq = 5)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 感じ _ 名詞 -> 私 _ 名詞 : freq = 5
+
++0+ count = 206, (wordpair = 私 _ 名詞 -> 感じ _ 名詞, freq = 5)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 私 _ 名詞 -> 感じ _ 名詞 : freq = 5
+
++0+ count = 207, (wordpair = 毛穴 _ 名詞 -> 価格# _ 代表名, freq = 5)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 毛穴 _ 名詞 -> 価格# _ 代表名 : freq = 5
+
++0+ count = 208, (wordpair = 手頃# _ 代表名 -> ファンデーション _ 名詞, freq = 5)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 手頃# _ 代表名 -> ファンデーション _ 名詞 : freq = 5
+
++0+ count = 209, (wordpair = 感じ _ 名詞 -> 負担 _ 名詞, freq = 5)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 感じ _ 名詞 -> 負担 _ 名詞 : freq = 5
+
++0+ count = 210, (wordpair = 負担 _ 名詞 -> 肌 _ 名詞, freq = 5)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 負担 _ 名詞 -> 肌 _ 名詞 : freq = 5
+
++0+ count = 211, (wordpair = 毛穴 _ 名詞 -> 薄付き _ 複合語, freq = 5)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 毛穴 _ 名詞 -> 薄付き _ 複合語 : freq = 5
+
++0+ count = 212, (wordpair = 負担 _ 名詞 -> 感じ _ 名詞, freq = 5)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 負担 _ 名詞 -> 感じ _ 名詞 : freq = 5
+
++0+ count = 213, (wordpair = のり _ 名詞 -> 綺麗# _ 代表名, freq = 5)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = のり _ 名詞 -> 綺麗# _ 代表名 : freq = 5
+
++0+ count = 214, (wordpair = 負担 _ 名詞 -> 伸び _ 名詞, freq = 5)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 負担 _ 名詞 -> 伸び _ 名詞 : freq = 5
+
++0+ count = 215, (wordpair = 薄付き _ 複合語 -> 自分 _ 名詞, freq = 5)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 薄付き _ 複合語 -> 自分 _ 名詞 : freq = 5
+
++0+ count = 216, (wordpair = 負担 _ 名詞 -> 無添加 _ 複合語, freq = 5)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 負担 _ 名詞 -> 無添加 _ 複合語 : freq = 5
+
++0+ count = 217, (wordpair = 価格# _ 代表名 -> ファンデーション _ 名詞, freq = 5)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 価格# _ 代表名 -> ファンデーション _ 名詞 : freq = 5
+
++0+ count = 218, (wordpair = 価格# _ 代表名 -> 無添加 _ 複合語, freq = 5)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 価格# _ 代表名 -> 無添加 _ 複合語 : freq = 5
+
++0+ count = 219, (wordpair = よう _ 名詞 -> ファンデーション _ 名詞, freq = 5)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = よう _ 名詞 -> ファンデーション _ 名詞 : freq = 5
+
++0+ count = 220, (wordpair = 伸び _ 名詞 -> 負担 _ 名詞, freq = 5)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 伸び _ 名詞 -> 負担 _ 名詞 : freq = 5
+
++0+ count = 221, (wordpair = 無添加 _ 複合語 -> 手頃# _ 代表名, freq = 5)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 無添加 _ 複合語 -> 手頃# _ 代表名 : freq = 5
+
++0+ count = 222, (wordpair = 無添加 _ 複合語 -> 色 _ 名詞, freq = 4)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 無添加 _ 複合語 -> 色 _ 名詞 : freq = 4
+
++0+ count = 223, (wordpair = のり _ 名詞 -> 毛穴 _ 名詞, freq = 4)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = のり _ 名詞 -> 毛穴 _ 名詞 : freq = 4
+
++0+ count = 224, (wordpair = 負担 _ 名詞 -> 薄付き _ 複合語, freq = 4)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 負担 _ 名詞 -> 薄付き _ 複合語 : freq = 4
+
++0+ count = 225, (wordpair = 毛穴 _ 名詞 -> のり _ 名詞, freq = 4)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 毛穴 _ 名詞 -> のり _ 名詞 : freq = 4
+
++0+ count = 226, (wordpair = 価格# _ 代表名 -> 肌色 _ 名詞, freq = 4)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 価格# _ 代表名 -> 肌色 _ 名詞 : freq = 4
+
++0+ count = 227, (wordpair = 私 _ 名詞 -> カバー力 _ 複合語, freq = 4)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 私 _ 名詞 -> カバー力 _ 複合語 : freq = 4
+
++0+ count = 228, (wordpair = よう _ 名詞 -> 色 _ 名詞, freq = 4)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = よう _ 名詞 -> 色 _ 名詞 : freq = 4
+
++0+ count = 229, (wordpair = 負担 _ 名詞 -> 綺麗# _ 代表名, freq = 4)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 負担 _ 名詞 -> 綺麗# _ 代表名 : freq = 4
+
++0+ count = 230, (wordpair = ファンデーション _ 名詞 -> 肌色 _ 名詞, freq = 4)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = ファンデーション _ 名詞 -> 肌色 _ 名詞 : freq = 4
+
++0+ count = 231, (wordpair = 私 _ 名詞 -> よう _ 名詞, freq = 4)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 私 _ 名詞 -> よう _ 名詞 : freq = 4
+
++0+ count = 232, (wordpair = 綺麗# _ 代表名 -> 負担 _ 名詞, freq = 4)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 綺麗# _ 代表名 -> 負担 _ 名詞 : freq = 4
+
++0+ count = 233, (wordpair = 自然 _ 名詞 -> 無添加 _ 複合語, freq = 4)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 自然 _ 名詞 -> 無添加 _ 複合語 : freq = 4
+
++0+ count = 234, (wordpair = 肌色 _ 名詞 -> 価格# _ 代表名, freq = 4)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 肌色 _ 名詞 -> 価格# _ 代表名 : freq = 4
+
++0+ count = 235, (wordpair = 肌色 _ 名詞 -> ファンデーション _ 名詞, freq = 4)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 肌色 _ 名詞 -> ファンデーション _ 名詞 : freq = 4
+
++0+ count = 236, (wordpair = のり _ 名詞 -> 伸び _ 名詞, freq = 4)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = のり _ 名詞 -> 伸び _ 名詞 : freq = 4
+
++0+ count = 237, (wordpair = カバー力 _ 複合語 -> 私 _ 名詞, freq = 4)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = カバー力 _ 複合語 -> 私 _ 名詞 : freq = 4
+
++0+ count = 238, (wordpair = よう _ 名詞 -> 私 _ 名詞, freq = 4)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = よう _ 名詞 -> 私 _ 名詞 : freq = 4
+
++0+ count = 239, (wordpair = 伸び _ 名詞 -> 肌色 _ 名詞, freq = 3)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 伸び _ 名詞 -> 肌色 _ 名詞 : freq = 3
+
++0+ count = 240, (wordpair = のり _ 名詞 -> 手頃# _ 代表名, freq = 3)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = のり _ 名詞 -> 手頃# _ 代表名 : freq = 3
+
++0+ count = 241, (wordpair = 無添加 _ 複合語 -> 薄付き _ 複合語, freq = 3)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 無添加 _ 複合語 -> 薄付き _ 複合語 : freq = 3
+
++0+ count = 242, (wordpair = 価格# _ 代表名 -> 薄付き _ 複合語, freq = 3)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 価格# _ 代表名 -> 薄付き _ 複合語 : freq = 3
+
++0+ count = 243, (wordpair = 自然 _ 名詞 -> 負担 _ 名詞, freq = 3)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 自然 _ 名詞 -> 負担 _ 名詞 : freq = 3
+
++0+ count = 244, (wordpair = 無添加 _ 複合語 -> 伸び _ 名詞, freq = 3)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 無添加 _ 複合語 -> 伸び _ 名詞 : freq = 3
+
++0+ count = 245, (wordpair = カバー力 _ 複合語 -> 肌色 _ 名詞, freq = 3)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = カバー力 _ 複合語 -> 肌色 _ 名詞 : freq = 3
+
++0+ count = 246, (wordpair = 負担 _ 名詞 -> 自然 _ 名詞, freq = 3)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 負担 _ 名詞 -> 自然 _ 名詞 : freq = 3
+
++0+ count = 247, (wordpair = よう _ 名詞 -> 薄付き _ 複合語, freq = 3)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = よう _ 名詞 -> 薄付き _ 複合語 : freq = 3
+
++0+ count = 248, (wordpair = 肌色 _ 名詞 -> カバー力 _ 複合語, freq = 3)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 肌色 _ 名詞 -> カバー力 _ 複合語 : freq = 3
+
++0+ count = 249, (wordpair = 肌色 _ 名詞 -> 伸び _ 名詞, freq = 3)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 肌色 _ 名詞 -> 伸び _ 名詞 : freq = 3
+
++0+ count = 250, (wordpair = 無添加 _ 複合語 -> ファンデーション _ 名詞, freq = 3)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 無添加 _ 複合語 -> ファンデーション _ 名詞 : freq = 3
+
++0+ count = 251, (wordpair = 薄付き _ 複合語 -> よう _ 名詞, freq = 3)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 薄付き _ 複合語 -> よう _ 名詞 : freq = 3
+
++0+ count = 252, (wordpair = 肌色 _ 名詞 -> 感じ _ 名詞, freq = 3)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 肌色 _ 名詞 -> 感じ _ 名詞 : freq = 3
+
++0+ count = 253, (wordpair = 私 _ 名詞 -> 手頃# _ 代表名, freq = 3)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 私 _ 名詞 -> 手頃# _ 代表名 : freq = 3
+
++0+ count = 254, (wordpair = のり _ 名詞 -> 仕上がり _ 名詞, freq = 3)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = のり _ 名詞 -> 仕上がり _ 名詞 : freq = 3
+
++0+ count = 255, (wordpair = 自然 _ 名詞 -> よう _ 名詞, freq = 3)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 自然 _ 名詞 -> よう _ 名詞 : freq = 3
+
++0+ count = 256, (wordpair = 無添加 _ 複合語 -> カバー力 _ 複合語, freq = 3)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 無添加 _ 複合語 -> カバー力 _ 複合語 : freq = 3
+
++0+ count = 257, (wordpair = 手頃# _ 代表名 -> 私 _ 名詞, freq = 3)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 手頃# _ 代表名 -> 私 _ 名詞 : freq = 3
+
++0+ count = 258, (wordpair = 価格# _ 代表名 -> のり _ 名詞, freq = 3)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 価格# _ 代表名 -> のり _ 名詞 : freq = 3
+
++0+ count = 259, (wordpair = 価格# _ 代表名 -> 毛穴 _ 名詞, freq = 3)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 価格# _ 代表名 -> 毛穴 _ 名詞 : freq = 3
+
++0+ count = 260, (wordpair = よう _ 名詞 -> 自然 _ 名詞, freq = 3)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = よう _ 名詞 -> 自然 _ 名詞 : freq = 3
+
++0+ count = 261, (wordpair = 自然 _ 名詞 -> ファンデーション _ 名詞, freq = 3)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 自然 _ 名詞 -> ファンデーション _ 名詞 : freq = 3
+
++0+ count = 262, (wordpair = よう _ 名詞 -> 負担 _ 名詞, freq = 2)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = よう _ 名詞 -> 負担 _ 名詞 : freq = 2
+
++0+ count = 263, (wordpair = 手頃# _ 代表名 -> 薄付き _ 複合語, freq = 2)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 手頃# _ 代表名 -> 薄付き _ 複合語 : freq = 2
+
++0+ count = 264, (wordpair = 手頃# _ 代表名 -> 負担 _ 名詞, freq = 2)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 手頃# _ 代表名 -> 負担 _ 名詞 : freq = 2
+
++0+ count = 265, (wordpair = 手頃# _ 代表名 -> のり _ 名詞, freq = 2)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 手頃# _ 代表名 -> のり _ 名詞 : freq = 2
+
++0+ count = 266, (wordpair = 感じ _ 名詞 -> 無添加 _ 複合語, freq = 2)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 感じ _ 名詞 -> 無添加 _ 複合語 : freq = 2
+
++0+ count = 267, (wordpair = よう _ 名詞 -> 仕上がり _ 名詞, freq = 2)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = よう _ 名詞 -> 仕上がり _ 名詞 : freq = 2
+
++0+ count = 268, (wordpair = のり _ 名詞 -> 感じ _ 名詞, freq = 2)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = のり _ 名詞 -> 感じ _ 名詞 : freq = 2
+
++0+ count = 269, (wordpair = 負担 _ 名詞 -> 手頃# _ 代表名, freq = 2)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 負担 _ 名詞 -> 手頃# _ 代表名 : freq = 2
+
++0+ count = 270, (wordpair = 綺麗# _ 代表名 -> ファンデーション _ 名詞, freq = 2)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 綺麗# _ 代表名 -> ファンデーション _ 名詞 : freq = 2
+
++0+ count = 271, (wordpair = 感じ _ 名詞 -> 肌色 _ 名詞, freq = 2)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 感じ _ 名詞 -> 肌色 _ 名詞 : freq = 2
+
++0+ count = 272, (wordpair = 毛穴 _ 名詞 -> 自分 _ 名詞, freq = 2)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 毛穴 _ 名詞 -> 自分 _ 名詞 : freq = 2
+
++0+ count = 273, (wordpair = 伸び _ 名詞 -> 毛穴 _ 名詞, freq = 2)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 伸び _ 名詞 -> 毛穴 _ 名詞 : freq = 2
+
++0+ count = 274, (wordpair = 薄付き _ 複合語 -> 手頃# _ 代表名, freq = 2)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 薄付き _ 複合語 -> 手頃# _ 代表名 : freq = 2
+
++0+ count = 275, (wordpair = 毛穴 _ 名詞 -> 手頃# _ 代表名, freq = 2)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 毛穴 _ 名詞 -> 手頃# _ 代表名 : freq = 2
+
++0+ count = 276, (wordpair = 手頃# _ 代表名 -> 毛穴 _ 名詞, freq = 2)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 手頃# _ 代表名 -> 毛穴 _ 名詞 : freq = 2
+
++0+ count = 277, (wordpair = 無添加 _ 複合語 -> よう _ 名詞, freq = 2)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 無添加 _ 複合語 -> よう _ 名詞 : freq = 2
+
++0+ count = 278, (wordpair = 自然 _ 名詞 -> 私 _ 名詞, freq = 2)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 自然 _ 名詞 -> 私 _ 名詞 : freq = 2
+
++0+ count = 279, (wordpair = よう _ 名詞 -> 伸び _ 名詞, freq = 2)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = よう _ 名詞 -> 伸び _ 名詞 : freq = 2
+
++0+ count = 280, (wordpair = 肌色 _ 名詞 -> よう _ 名詞, freq = 2)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 肌色 _ 名詞 -> よう _ 名詞 : freq = 2
+
++0+ count = 281, (wordpair = よう _ 名詞 -> 肌色 _ 名詞, freq = 2)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = よう _ 名詞 -> 肌色 _ 名詞 : freq = 2
+
++0+ count = 282, (wordpair = 私 _ 名詞 -> 自然 _ 名詞, freq = 2)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 私 _ 名詞 -> 自然 _ 名詞 : freq = 2
+
++0+ count = 283, (wordpair = 自分 _ 名詞 -> 薄付き _ 複合語, freq = 2)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 自分 _ 名詞 -> 薄付き _ 複合語 : freq = 2
+
++0+ count = 284, (wordpair = 色 _ 名詞 -> よう _ 名詞, freq = 2)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 色 _ 名詞 -> よう _ 名詞 : freq = 2
+
++0+ count = 285, (wordpair = 私 _ 名詞 -> 薄付き _ 複合語, freq = 2)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 私 _ 名詞 -> 薄付き _ 複合語 : freq = 2
+
++0+ count = 286, (wordpair = 価格# _ 代表名 -> よう _ 名詞, freq = 2)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 価格# _ 代表名 -> よう _ 名詞 : freq = 2
+
++0+ count = 287, (wordpair = 伸び _ 名詞 -> よう _ 名詞, freq = 2)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 伸び _ 名詞 -> よう _ 名詞 : freq = 2
+
++0+ count = 288, (wordpair = よう _ 名詞 -> 価格# _ 代表名, freq = 2)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = よう _ 名詞 -> 価格# _ 代表名 : freq = 2
+
++0+ count = 289, (wordpair = 薄付き _ 複合語 -> 毛穴 _ 名詞, freq = 1)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 薄付き _ 複合語 -> 毛穴 _ 名詞 : freq = 1
+
++0+ count = 290, (wordpair = ファンデーション _ 名詞 -> 仕上がり _ 名詞, freq = 1)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = ファンデーション _ 名詞 -> 仕上がり _ 名詞 : freq = 1
+
++0+ count = 291, (wordpair = 自分 _ 名詞 -> 無添加 _ 複合語, freq = 1)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 自分 _ 名詞 -> 無添加 _ 複合語 : freq = 1
+
++0+ count = 292, (wordpair = 肌色 _ 名詞 -> 綺麗# _ 代表名, freq = 1)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 肌色 _ 名詞 -> 綺麗# _ 代表名 : freq = 1
+
++0+ count = 293, (wordpair = 仕上がり _ 名詞 -> 肌色 _ 名詞, freq = 1)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 仕上がり _ 名詞 -> 肌色 _ 名詞 : freq = 1
+
++0+ count = 294, (wordpair = よう _ 名詞 -> 手頃# _ 代表名, freq = 1)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = よう _ 名詞 -> 手頃# _ 代表名 : freq = 1
+
++0+ count = 295, (wordpair = よう _ 名詞 -> カバー力 _ 複合語, freq = 1)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = よう _ 名詞 -> カバー力 _ 複合語 : freq = 1
+
++0+ count = 296, (wordpair = のり _ 名詞 -> よう _ 名詞, freq = 1)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = のり _ 名詞 -> よう _ 名詞 : freq = 1
+
++0+ count = 297, (wordpair = 私 _ 名詞 -> 無添加 _ 複合語, freq = 1)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 私 _ 名詞 -> 無添加 _ 複合語 : freq = 1
+
++0+ count = 298, (wordpair = 色 _ 名詞 -> 無添加 _ 複合語, freq = 1)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 色 _ 名詞 -> 無添加 _ 複合語 : freq = 1
+
++0+ count = 299, (wordpair = 私 _ 名詞 -> 伸び _ 名詞, freq = 1)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 私 _ 名詞 -> 伸び _ 名詞 : freq = 1
+
++0+ count = 300, (wordpair = 負担 _ 名詞 -> よう _ 名詞, freq = 1)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 負担 _ 名詞 -> よう _ 名詞 : freq = 1
+
++0+ count = 301, (wordpair = 綺麗# _ 代表名 -> のり _ 名詞, freq = 1)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 綺麗# _ 代表名 -> のり _ 名詞 : freq = 1
+
++0+ count = 302, (wordpair = のり _ 名詞 -> 私 _ 名詞, freq = 1)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = のり _ 名詞 -> 私 _ 名詞 : freq = 1
+
++0+ count = 303, (wordpair = 色 _ 名詞 -> 負担 _ 名詞, freq = 1)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 色 _ 名詞 -> 負担 _ 名詞 : freq = 1
+
++0+ count = 304, (wordpair = カバー力 _ 複合語 -> のり _ 名詞, freq = 1)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = カバー力 _ 複合語 -> のり _ 名詞 : freq = 1
+
++0+ count = 305, (wordpair = カバー力 _ 複合語 -> よう _ 名詞, freq = 1)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = カバー力 _ 複合語 -> よう _ 名詞 : freq = 1
+
++0+ count = 306, (wordpair = 自分 _ 名詞 -> のり _ 名詞, freq = 1)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 自分 _ 名詞 -> のり _ 名詞 : freq = 1
+
++0+ count = 307, (wordpair = 薄付き _ 複合語 -> 無添加 _ 複合語, freq = 1)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 薄付き _ 複合語 -> 無添加 _ 複合語 : freq = 1
+
++0+ count = 308, (wordpair = 手頃# _ 代表名 -> よう _ 名詞, freq = 1)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 手頃# _ 代表名 -> よう _ 名詞 : freq = 1
+
++0+ count = 309, (wordpair = 毛穴 _ 名詞 -> 私 _ 名詞, freq = 1)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 毛穴 _ 名詞 -> 私 _ 名詞 : freq = 1
+
++0+ count = 310, (wordpair = 薄付き _ 複合語 -> ファンデーション _ 名詞, freq = 1)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 薄付き _ 複合語 -> ファンデーション _ 名詞 : freq = 1
+
++0+ count = 311, (wordpair = 仕上がり _ 名詞 -> 私 _ 名詞, freq = 1)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 仕上がり _ 名詞 -> 私 _ 名詞 : freq = 1
+
++0+ count = 312, (wordpair = 自然 _ 名詞 -> のり _ 名詞, freq = 1)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 自然 _ 名詞 -> のり _ 名詞 : freq = 1
+
++0+ count = 313, (wordpair = ファンデーション _ 名詞 -> 薄付き _ 複合語, freq = 1)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = ファンデーション _ 名詞 -> 薄付き _ 複合語 : freq = 1
+
++0+ count = 314, (wordpair = 仕上がり _ 名詞 -> のり _ 名詞, freq = 1)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 仕上がり _ 名詞 -> のり _ 名詞 : freq = 1
+
++0+ count = 315, (wordpair = 自分 _ 名詞 -> 毛穴 _ 名詞, freq = 1)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 自分 _ 名詞 -> 毛穴 _ 名詞 : freq = 1
+
++0+ count = 316, (wordpair = 負担 _ 名詞 -> 色 _ 名詞, freq = 1)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 負担 _ 名詞 -> 色 _ 名詞 : freq = 1
+
++0+ count = 317, (wordpair = 私 _ 名詞 -> 仕上がり _ 名詞, freq = 1)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 私 _ 名詞 -> 仕上がり _ 名詞 : freq = 1
+
++0+ count = 318, (wordpair = 毛穴 _ 名詞 -> よう _ 名詞, freq = 1)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 毛穴 _ 名詞 -> よう _ 名詞 : freq = 1
+
++0+ count = 319, (wordpair = ファンデーション _ 名詞 -> 手頃# _ 代表名, freq = 1)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = ファンデーション _ 名詞 -> 手頃# _ 代表名 : freq = 1
+
++0+ count = 320, (wordpair = 仕上がり _ 名詞 -> ファンデーション _ 名詞, freq = 1)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 仕上がり _ 名詞 -> ファンデーション _ 名詞 : freq = 1
+
++0+ count = 321, (wordpair = 私 _ 名詞 -> のり _ 名詞, freq = 1)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 私 _ 名詞 -> のり _ 名詞 : freq = 1
+
++0+ count = 322, (wordpair = 色 _ 名詞 -> 薄付き _ 複合語, freq = 1)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 色 _ 名詞 -> 薄付き _ 複合語 : freq = 1
+
++0+ count = 323, (wordpair = 薄付き _ 複合語 -> 肌色 _ 名詞, freq = 1)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 薄付き _ 複合語 -> 肌色 _ 名詞 : freq = 1
+
++0+ count = 324, (wordpair = よう _ 名詞 -> 毛穴 _ 名詞, freq = 1)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = よう _ 名詞 -> 毛穴 _ 名詞 : freq = 1
+
++0+ count = 325, (wordpair = よう _ 名詞 -> 無添加 _ 複合語, freq = 1)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = よう _ 名詞 -> 無添加 _ 複合語 : freq = 1
+
++0+ count = 326, (wordpair = 綺麗# _ 代表名 -> 肌色 _ 名詞, freq = 1)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 綺麗# _ 代表名 -> 肌色 _ 名詞 : freq = 1
+
++0+ count = 327, (wordpair = 負担 _ 名詞 -> 自分 _ 名詞, freq = 1)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 負担 _ 名詞 -> 自分 _ 名詞 : freq = 1
+
++0+ count = 328, (wordpair = 毛穴 _ 名詞 -> 肌色 _ 名詞, freq = 1)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 毛穴 _ 名詞 -> 肌色 _ 名詞 : freq = 1
+
++0+ count = 329, (wordpair = 無添加 _ 複合語 -> 私 _ 名詞, freq = 1)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 無添加 _ 複合語 -> 私 _ 名詞 : freq = 1
+
++0+ count = 330, (wordpair = 私 _ 名詞 -> 毛穴 _ 名詞, freq = 1)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 私 _ 名詞 -> 毛穴 _ 名詞 : freq = 1
+
++0+ count = 331, (wordpair = 肌色 _ 名詞 -> 薄付き _ 複合語, freq = 1)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 肌色 _ 名詞 -> 薄付き _ 複合語 : freq = 1
+
++0+ count = 332, (wordpair = 肌色 _ 名詞 -> 手頃# _ 代表名, freq = 1)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 肌色 _ 名詞 -> 手頃# _ 代表名 : freq = 1
+
++0+ count = 333, (wordpair = 自分 _ 名詞 -> 負担 _ 名詞, freq = 1)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 自分 _ 名詞 -> 負担 _ 名詞 : freq = 1
+
++0+ count = 334, (wordpair = カバー力 _ 複合語 -> 無添加 _ 複合語, freq = 1)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = カバー力 _ 複合語 -> 無添加 _ 複合語 : freq = 1
+
++0+ count = 335, (wordpair = 無添加 _ 複合語 -> 自分 _ 名詞, freq = 1)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 無添加 _ 複合語 -> 自分 _ 名詞 : freq = 1
+
++0+ count = 336, (wordpair = 色 _ 名詞 -> のり _ 名詞, freq = 1)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 色 _ 名詞 -> のり _ 名詞 : freq = 1
+
++0+ count = 337, (wordpair = カバー力 _ 複合語 -> ファンデーション _ 名詞, freq = 1)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = カバー力 _ 複合語 -> ファンデーション _ 名詞 : freq = 1
+
++0+ count = 338, (wordpair = 伸び _ 名詞 -> 私 _ 名詞, freq = 1)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 伸び _ 名詞 -> 私 _ 名詞 : freq = 1
+
++0+ count = 339, (wordpair = 肌色 _ 名詞 -> 毛穴 _ 名詞, freq = 1)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 肌色 _ 名詞 -> 毛穴 _ 名詞 : freq = 1
+
++0+ count = 340, (wordpair = 肌色 _ 名詞 -> 仕上がり _ 名詞, freq = 1)
++1+ self.drawn_edge_total_count = 42 < self.max_edge_total_count = 100
++2+ len(drawn_node_set) = 20 < self.max_display_node_count = 20
++3+ wordpair = 肌色 _ 名詞 -> 仕上がり _ 名詞 : freq = 1
+

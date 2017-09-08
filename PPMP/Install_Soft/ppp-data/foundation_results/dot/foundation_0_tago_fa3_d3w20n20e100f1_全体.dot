@@ -1,0 +1,58 @@
+digraph "g" {
+    size = "10.0, 10.0";
+    node [shape=ellipse, fontname="arialuni.ttf", fontsize=8, width=0.5, margin=0.0]
+/* ノード */
+	"肌" [style = filled, color = "#FF1C62", fillcolor = "#FFDBEB", fontsize=8, fontcolor = "black"];  /* 1 */
+	"自然" [style = filled, color = "#FF1C62", fillcolor = "#FFDBEB", fontsize=8, fontcolor = "black"];  /* 1 */
+	"色" [style = filled, color = "#FF1C62", fillcolor = "#FFDBEB", fontsize=8, fontcolor = "black"];  /* 1 */
+	"価格#" [style = filled, color = "#CF00BD", fillcolor = "#FFDBEB", fontsize=8, fontcolor = "black"];  /* 1 */
+	"自分" [style = filled, color = "#CF00BD", fillcolor = "#FFDBEB", fontsize=8, fontcolor = "black"];  /* 1 */
+	"綺麗#" [style = filled, color = "#CF00BD", fillcolor = "#FFFFFF", fontsize=8, fontcolor = "black"];  /* 1 */
+	"感じ" [style = filled, color = "#CF00BD", fillcolor = "#FFFFFF", fontsize=8, fontcolor = "black"];  /* 1 */
+	"手頃#" [style = filled, color = "#CF00BD", fillcolor = "#FFFFFF", fontsize=8, fontcolor = "black"];  /* 1 */
+	"仕上がり" [style = filled, color = "#CF00BD", fillcolor = "#FFFFFF", fontsize=8, fontcolor = "black"];  /* 1 */
+	"カバー力" [style = filled, color = "#CF00BD", fillcolor = "#FFFFFF", fontsize=8, fontcolor = "black"];  /* 1 */
+	"伸び" [style = filled, color = "#CF00BD", fillcolor = "#FFFFFF", fontsize=8, fontcolor = "black"];  /* 1 */
+	"薄付き" [style = filled, color = "gray", fillcolor = "#FFFFFF", fontsize=8, fontcolor = "black"];  /* 1 */
+	"毛穴" [style = filled, color = "gray", fillcolor = "#FFFFFF", fontsize=8, fontcolor = "black"];  /* 1 */
+	"ファンデーション" [style = filled, color = "gray", fillcolor = "#FFFFFF", fontsize=8, fontcolor = "black"];  /* 1 */
+	"のり" [style = filled, color = "gray", fillcolor = "#FFFFFF", fontsize=8, fontcolor = "black"];  /* 1 */
+	"無添加" [style = filled, color = "gray", fillcolor = "#FFFFFF", fontsize=8, fontcolor = "black"];  /* 1 */
+	"よう" [style = filled, color = "gray", fillcolor = "#FFFFFF", fontsize=8, fontcolor = "black"];  /* 1 */
+	"私" [style = filled, color = "gray", fillcolor = "#FFFFFF", fontsize=8, fontcolor = "black"];  /* 1 */
+	"肌色" [style = filled, color = "gray", fillcolor = "#FFFFFF", fontsize=8, fontcolor = "black"];  /* 1 */
+	"負担" [style = filled, color = "gray", fillcolor = "#FFFFFF", fontsize=8, fontcolor = "black"];  /* 1 */
+
+/* エッジ */
+	"価格#" -> "手頃#" [color = "gray"];  /* 1: 326 */
+	"肌" -> "自分" [color = "#FF1C62"];  /* 3: 292 */
+	"肌" -> "色" [color = "#FF1C62"];  /* 6: 286 */
+	"肌" -> "綺麗#" [color = "#FF1C62"];  /* 7: 255 */
+	"自然" -> "仕上がり" [color = "#FF1C62"];  /* 10: 210 */
+	"自然" -> "感じ" [color = "#FF1C62"];  /* 11: 199 */
+	"色" -> "自分" [color = "#FF1C62"];  /* 14: 167 */
+	"肌" -> "感じ" [color = "#FF1C62"];  /* 16: 144 */
+	"肌" -> "価格#" [color = "#FF1C62"];  /* 18: 134 */
+	"肌" -> "自然" [color = "#FF1C62"];  /* 20: 116 */
+	"肌" -> "伸び" [color = "#FF1C62"];  /* 21: 99 */
+	"肌" -> "負担" [color = "#FF1C62"];  /* 23: 88 */
+	"肌" -> "カバー力" [color = "#FF1C62"];  /* 25: 79 */
+	"綺麗#" -> "仕上がり" [color = "#CF00BD"];  /* 26: 75 */
+	"仕上がり" -> "綺麗#" [color = "#CF00BD"];  /* 27: 75 */
+	"カバー力" -> "伸び" [color = "#CF00BD"];  /* 28: 58 */
+	"伸び" -> "カバー力" [color = "#CF00BD"];  /* 29: 58 */
+	"肌" -> "手頃#" [color = "#FF1C62"];  /* 30: 56 */
+	"色" -> "価格#" [color = "#FF1C62"];  /* 33: 54 */
+	"自然" -> "色" [color = "#FF1C62"];  /* 35: 52 */
+	"自然" -> "カバー力" [color = "#FF1C62"];  /* 37: 50 */
+	"肌" -> "よう" [color = "#FF1C62"];  /* 38: 49 */
+	"自分" -> "肌色" [color = "gray"];  /* 39: 49 */
+	"カバー力" -> "薄付き" [color = "#CF00BD"];  /* 40: 45 */
+	"肌" -> "ファンデーション" [color = "#FF1C62"];  /* 41: 45 */
+	"薄付き" -> "カバー力" [color = "#CF00BD"];  /* 43: 45 */
+	"肌" -> "無添加" [color = "#FF1C62"];  /* 46: 45 */
+	"肌" -> "のり" [color = "#FF1C62"];  /* 47: 45 */
+	"肌" -> "私" [color = "#FF1C62"];  /* 48: 43 */
+	"毛穴" -> "肌" [color = "gray"];  /* 49: 43 */
+
+}
