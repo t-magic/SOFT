@@ -1,3 +1,1 @@
-# SOFT
-
-* [PPMP](PPMP/PPMP.md)
+# [PPMP](PPMP/PPMP.md)
