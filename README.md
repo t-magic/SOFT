@@ -1,1 +1,1 @@
-# [PPMP](PPMP/PPMP.md)
+# [PPMPのインストールへ](PPMP/PPMP.md)
