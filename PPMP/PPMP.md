@@ -7,8 +7,8 @@
 
 に置いてあったものをここに置いていきます。
 
-[Install_Soft_0.997のダウンロード](http://textmagic.dip.jp/trac/HRDataScientistWG/raw-attachment/wiki/WikiStart/PPMPのインストール/Install_Soft_0.997.zip)
-
+* [全ソフト(Install_Soft_0.997)のダウンロード](http://textmagic.dip.jp/trac/HRDataScientistWG/raw-attachment/wiki/WikiStart/PPMPのインストール/Install_Soft_0.997.zip)
+* [お試しの最新版(PPMP_v1.0)のダウンロード](https://drive.google.com/drive/folders/0B58FUymlrqh9NHBLLTFFTElHOHM?usp=sharing)
 ## インストールの手順
 * 引っ越し前に作成したので、適当に読み変えてください。
 
