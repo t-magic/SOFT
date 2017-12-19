@@ -1,6 +1,6 @@
 # PPMPのインストール
 ## インストールの手順
-* [お試しの最新版(PPMP_v1.0)のダウンロード](https://drive.google.com/drive/folders/0B58FUymlrqh9TkwyRzUtcUpjXzQ?usp=sharing)
+* [お試しの最新版(PPMP_v1.0)のダウンロード](https://drive.google.com/file/d/1AK_QrhoevLua-JN8iD55aAako2bvwicX/view?usp=sharing）
 * [PPMPの実行に必要なソフトのダウンロード](https://drive.google.com/open?id=1GH30fM0VXykWfeReTd3Wt19HRJTeSjJ5)
 * 参考
   * [WikiStart/PPMPのビジネスモデル](https://github.com/t-magic/SOFT/wiki)
