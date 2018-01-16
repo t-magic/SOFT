@@ -7,7 +7,8 @@
       * 2.に同梱のインストーラーを修正版インストーラーに差し替えてご使用ください。
 
 1.  [お試し版(PPMP_v1.201801)のダウンロード](https://drive.google.com/file/d/1H9MLElZ9XmvDsxmKmA6VTubD6XNjhzel/view?usp=sharing)
-    * (デバッグ中) [お試し最新版(PPMP_v2.201801)のダウンロード](https://drive.google.com/file/d/1fj3SyCzYLdwzrJSvv1HGDG0_SvxU1REg/view?usp=sharing)
+    * [追加分](https://drive.google.com/file/d/1Cg-2F-f5Xh4aTEOBQv-r7b_f-0hbOmUc/view?usp=sharing)
+    * ~~(デバッグ中) [お試し最新版(PPMP_v2.201801)のダウンロード](https://drive.google.com/file/d/1fj3SyCzYLdwzrJSvv1HGDG0_SvxU1REg/view?usp=sharing)~~
 
 1. [サンプルデータ(ファンデーション)](https://drive.google.com/file/d/1QZRCty4_mOs6XDJfZF69e71RqwvKK8to/view?usp=sharing)
 
