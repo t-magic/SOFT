@@ -1,5 +1,5 @@
 # PPMP(2018年版)のインストール
-* 2018年1月15日改訂
+* 2018年6月4日改訂
 
 ## 最新版のダウンロード
 1. [お試し最新版2(PPMP_v2.201802)のダウンロード](https://drive.google.com/file/d/1afNeztbhXGbpreFMyhETcotdAJcs3rUX/view?usp=sharing)
