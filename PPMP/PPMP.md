@@ -2,6 +2,7 @@
 * 2018年6月4日改訂
 
 ## 最新版のダウンロード
+#### 以下の4ファイルをダウンロードしておいてください。
 1. [お試し最新版2(PPMP_v2.201802)のダウンロード](https://drive.google.com/file/d/1afNeztbhXGbpreFMyhETcotdAJcs3rUX/view?usp=sharing)
 1. [PPMPの実行に必要なソフトのダウンロード](https://drive.google.com/file/d/1GH30fM0VXykWfeReTd3Wt19HRJTeSjJ5/view?usp=sharing)
    * [修正版インストーラーのダウンロード](https://drive.google.com/file/d/1XT1kByYB-77iB-g_stDJgUzLUsbTsiVy/view?usp=sharing)
